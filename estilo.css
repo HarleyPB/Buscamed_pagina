@@ -1,0 +1,75 @@
+body {
+    font-family: Open Sans, sans-serif; /* Cambia la fuente del texto a "Open Sans" con una fuente de respaldo sans-serif */
+    background-color: #171d4e; /* Cambia el color de fondo del cuerpo a un tono azul oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 20px; /* Agrega un relleno de 20 píxeles alrededor del contenido del cuerpo */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del cuerpo */
+}
+
+.rojo {
+  color: red; /* Cambia el color del texto a rojo*/
+}
+
+.h1{
+    font-size: 25px;  /*Una margen inferior de 30px para separar el título del contenido siguiente*/
+    font-weight: bold; /*una fuente en negrita para resaltar el título*/
+    margin-bottom: 30px;  /*Una margen inferior de 30px para separar el título del contenido siguiente*/
+    color:#4359e8; /*un color azul para el título*/
+    justify-content: center; /*centra el título horizontalmente en su contenedor*/
+}
+
+.fijado {
+  position: fixed; /*fija la posición del elemento en la ventana del navegador*/
+  bottom:40px;  /*coloca el elemento a 40 píxeles desde la parte inferior de la ventana del navegador*/
+  right: 10px;   /*coloca el elemento a 10 píxeles desde la parte derecha de la ventana del navegador*/
+}
+
+.navegacion li {
+    margin-right: 20px;    /* opcional: separa los elementos */
+    display: inline-block; /* hace que los elementos estén en línea */
+}
+
+.navegacion a {
+    text-decoration: none; /* quita el subrayado de los enlaces */
+    color: rgb(224, 224, 232);           /* color de los enlaces */
+    font-weight: bold; /* hace que el texto sea negrita */
+    transition: color 0.3s; /* transición suave al cambiar de color */
+}
+.navegacion a:hover {
+    text-decoration: underline; /* subraya el enlace al pasar el mouse */
+    color: rgb(204, 62, 34);             /* cambia el color al pasar el mouse  */
+}
+.navegacion{
+    position:sticky;  /* hace que la barra de navegación se quede en su posición al hacer scroll */
+    top:0;
+    background-color: #333; /* color de fondo */
+    padding: 15px 0;           /* espacio interno */ 
+
+}
+.navegacion ul {
+    margin: 0; /* elimina el margen por defecto */
+    padding: 0; /* elimina el padding por defecto */
+    display: flex; /* usa flexbox para alinear los elementos */
+    list-style-type: none; /* elimina los puntos de la lista */
+}
+
+/* Botón */
+.search-bar button {
+  padding: 8px 20px; /* espacio interno del botón */
+  border: none;  /* elimina el borde del botón */
+  background-color: #5441e3;  /* color de fondo del botón */
+  color: white;   /* color del texto del botón */
+  border-radius: 0 20px 20px 0; /* bordes redondeados en la parte derecha del botón */
+  cursor: pointer;  /* cambia el cursor al pasar sobre el botón */
+  transition: background 0.3s; /* transición suave al cambiar el color de fondo */
+}
+
+.search-bar button:hover {
+  background-color: #3465bb;  /* cambia el color de fondo al pasar el mouse */
+}
+/* Contenedor de la barra */
+.search-bar {
+  display: flex; /* usa flexbox para alinear los elementos */ 
+  justify-content: center; /* centra los elementos horizontalmente */
+  margin: 20px 0; /* margen superior e inferior de 20px */
+}
